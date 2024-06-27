@@ -1,2 +1,3 @@
 # ccc-fire.github.io
-自用
+
+My Personal Blog via GitHub
