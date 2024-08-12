@@ -4,7 +4,7 @@ My Personal Blog via GitHub
 
 ## 关于CPP
 
-[Cherno C++](01_cpp/Cherno%20C++.md) : 一些关于cpp的基础知识（基础中的基础）
+[Cherno C++](./01_cpp/Cherno_C++.md) : 一些关于cpp的基础知识（基础中的基础）
 
 目录（没加链接版）
 
