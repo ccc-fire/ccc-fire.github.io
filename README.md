@@ -17,3 +17,10 @@ My Personal Blog via GitHub
 ### 页面2的子页面
 
 22222222
+
+## [测试doc1链接](doc/doc1.md)
+
+
+
+
+## [测试doc2的内容](doc2/latex.md)
