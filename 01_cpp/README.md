@@ -1,13 +1,7 @@
-# ccc-fire.github.io
 
-My Personal Blog via GitHub
+目录：
 
-## 关于CPP
-
-[Cherno C++](01_cpp/Cherno%20C++.md) : 一些关于cpp的基础知识（基础中的基础）
-
-目录（没加链接版）
-
+[Cherno C++](Cherno%20C++.md)
 
 5. C++是如何工作的
 6. C++编译器是如何工作的
@@ -59,25 +53,3 @@ My Personal Blog via GitHub
 52. C++中如何处理多返回值
 53. C++的模板
 54. C++的堆与栈内存的比较
-
-
-[也是Cpp](./01_cpp/Cpp.md)
-
-### 页面1的子页面
-
-11111111
-
-## 页面2
-
-2222
-
-### 页面2的子页面
-
-22222222
-
-## [测试doc1链接](doc/doc1.md)
-
-
-
-
-## [测试doc2的内容](doc2/latex.md)
