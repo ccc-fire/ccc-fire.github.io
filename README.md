@@ -2,7 +2,7 @@
 
 My Personal Blog via GitHub
 
-## 关于CPP
+## [关于CPP](./01_cpp/README.md)
 
 [Cherno C++](./01_cpp/Cherno_C++.md) : 一些关于cpp的基础知识（基础中的基础）
 
