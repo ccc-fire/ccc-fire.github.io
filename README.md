@@ -1,10 +1,17 @@
-**My Personal Blog via GitHub**
+**My Personal Blog**
+
+Via [GitHub](https://ccc-fire.github.io/)
+
+My CSDN Blog: [giugioggg](https://blog.csdn.net/weixin_45484608)
 
 ## [关于CPP](./01_cpp/README.md)
 
 [Cherno C++](./01_cpp/Cherno_C++.md) ：一些关于cpp的基础知识（基础中的基础）
 
 [也是Cpp](./01_cpp/Cpp.md) ：（进阶一点点）
+
+
+## Deep Learning System
 
 ### 页面1的子页面
 
