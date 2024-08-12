@@ -13,7 +13,7 @@
 
 ## [Deep Learning System](./02_dlsys/README.md)
 
-dlsys的基础知识（没加链接版）
+一些关于dlsys的基础知识（没加链接版）
 
 也是dlsys（没加链接版）
 
@@ -23,3 +23,5 @@ dlsys的基础知识（没加链接版）
 
 ## [测试doc2的内容](./doc2/latex.md)
 测试
+
+目录测试
