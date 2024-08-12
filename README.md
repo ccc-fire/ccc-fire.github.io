@@ -6,7 +6,7 @@
 
 ## [C++](./01_cpp/README.md)
 
-[Cherno C++](./01_cpp/Cherno_C++.md) ：一些关于cpp的基础知识（基础中的基础）
+[Cherno C++](./01_cpp/Cherno_Cpp.md) ：一些关于cpp的基础知识（基础中的基础）
 
 [也是Cpp](./01_cpp/Cpp.md) ：（进阶一点点）
 
