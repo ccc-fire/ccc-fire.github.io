@@ -1,6 +1,6 @@
 **关于 C++**
 
-[Cherno C++](Cherno_C++.md) : 一些关于cpp的基础知识（基础中的基础）
+[Cherno C++](Cherno_Cpp.md) : 一些关于cpp的基础知识（基础中的基础）
 
 目录（没加链接版）：
 
