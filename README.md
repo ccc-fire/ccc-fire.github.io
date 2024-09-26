@@ -18,6 +18,7 @@
 也是dlsys（没加链接版）
 
 
+## [Typical Algorithms](./03_programme/README.md)
 <!-- ## [测试页面](./test/test1.md)
 测试
 
