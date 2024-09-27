@@ -22,9 +22,10 @@
 
 ## [Typical Algorithms](./03_programme/README.md)
 
-[数据结构与算法](./Typical_Algorithms.md)
+<!-- [数据结构与算法](./Typical_Algorithms.md) -->
+[数据结构与算法](./03_programme/Typical_Algorithms.md)
 
-[设计模式](./Design_Patterns.md)
+[设计模式](./03_programme/Design_Patterns.md)
 
 <!-- ## [测试页面](./test/test1.md)
 测试
