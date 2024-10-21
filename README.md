@@ -7,17 +7,17 @@
 
 ## [C++](./01_cpp/README.md)
 
-[Cherno C++](./01_cpp/Cherno_Cpp.md) ：一些关于cpp的基础知识（基础中的基础）
+[Cherno C++](./01_cpp/Cherno_Cpp.md) 
 
-[也是Cpp](./01_cpp/Cpp.md) ：（进阶一点点）
+[也是Cpp](./01_cpp/Cpp.md)
 
 
 ## [Deep Learning System](./02_dlsys/README.md)
 
-[Dlsys](./02_dlsys/dlsys.md)：一些关于dlsys的基础知识
+[Dlsys](./02_dlsys/dlsys.md)
 
 
-[也是dlsys](./02_dlsys/hw4.md)：进阶一点点
+[也是dlsys](./02_dlsys/hw4.md)
 
 
 ## [Typical Algorithms](./03_programme/README.md)
