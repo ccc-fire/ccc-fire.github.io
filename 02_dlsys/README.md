@@ -2,8 +2,9 @@
 
 
 
-[Deep Learning System](./dlsys.md)：一些关于dlsys的基础知识
+[Deep Learning System](./dlsys.md)
 
+<!-- ：一些关于dlsys的基础知识 -->
 
 目录：
 
@@ -36,7 +37,9 @@ inline内联函数
 12.asm汇编
 
 
-[也是dlsys](./hw4.md)：进阶一点点
+[也是dlsys](./hw4.md)
+
+<!-- ：进阶一点点 -->
 
 目录：
 

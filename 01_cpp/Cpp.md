@@ -586,39 +586,90 @@ int main() {
 
 
 
+# 基本数据结构
+
+**容器**和**容器适配器**提供了经典数据结构（如数组、链表、栈、队列、树和哈希表）在 C++ 中的具体实现，因此在应用层面上，它们可以视为数据结构的实例。
 
 
 
 
-# 2. STL 容器
 
-STL包括三部分内容：容器和算法，还有融合这二者的迭代器。
+# 2. STL（标准模板库）
 
 [STL 容器简介 - OI Wiki (oi-wiki.org)](https://oi-wiki.org/lang/csl/container/)
+
+STL是标准模板库，使用的是泛型编程，所有的容器都是模板类，声明容器时都是`容器名<类型名> 名字`的形式，模板参数的个数和形式都会根据具体容器而变。
+
+
+
+## 序列式容器
+
+vector：动态数组（扩容时msvc是1.5倍，g++是2倍）
+
+array：静态数组
+
+deque：双端队列
+
+list：双向链表
+
+forward_list：单向链表
+
+注意：
+
+- C++中vector和array的区别一定要弄清楚，**vector的底层实现是array**，封装后使用更友好。
+
+
+
+## 关联式容器
+
+set：元素集合
+
+- [关联式容器 - OI Wiki (oi-wiki.org)](https://oi-wiki.org/lang/csl/associative-container/)
+
+multiset：允许重复元素的集合
+
+map：映射
+
+multimap：允许重复键的映射
+
+无序的关联式容器：unordered_set、unordered_multiset、unordered_map、unordered_multimap（**C++11**，均可以看做是哈希表的视线，提供快速的查找性能）
+
+![QQ图片20240720235326](Cpp.assets/QQ图片20240720235326-1722784044511.png)![QQ图片20240720235320](Cpp.assets/QQ图片20240720235320-1722784044512.png)
+
+
+
+## 容器适配器
+
+容器适配器是对基础容器进行封装，使它们模拟某些数据结构的行为。
+
+![image-20241016200316415](Cpp.assets/image-20241016200316415.png)
+
+![image-20241016200757807](Cpp.assets/image-20241016200757807.png)
+
+注意：
+
+- [STL](http://c.biancheng.net/stl/) 中的容器适配器，其内部使用的基础容器并不是固定的，用户可以在满足特定条件的多个基础容器中自由选择。
+- 例如：栈是**容器适配器**，底层容器使用不同的容器，导致栈内数据在内存中不一定是连续分布的
+
+- 栈提供push 和 pop 等等接口，所有元素必须符合先进后出规则，所以栈不提供走访功能，也不提供迭代器(iterator)。 不像是set 或者map 提供迭代器iterator来遍历所有元素。
+
+#### 用队列实现栈
+
+
+
+## 迭代器
+
+
+
+STL主要包括三部分内容：容器和算法，还有融合这二者的迭代器。
+
+
 
 ![image-20240723160649593](Cpp.assets/image-20240723160649593.png)
 
 除了常见的容器，还可以看一下迭代器：[(9条消息) c++标准模板库-map的常见用法_map_林福流的博客-CSDN博客](https://blog.csdn.net/xhrlmbhfrxldll/article/details/108929766?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-3-108929766-blog-76375685.pc_relevant_3mothn_strategy_recovery&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-3-108929766-blog-76375685.pc_relevant_3mothn_strategy_recovery&utm_relevant_index=4)]
 
 迭代器是STL的精髓，我们这样描述它：迭代器提供了一种方法，使它能够按照顺序访问某个容器所含的各个元素，但无需暴露该容器的内部结构。它将容器和算法分开，好让这二者独立设计。
-
-
-
-
-
-
-
-![QQ图片20240720235326](Cpp.assets/QQ图片20240720235326-1722784044511.png)![QQ图片20240720235320](Cpp.assets/QQ图片20240720235320-1722784044512.png)
-
-
-
-- C++中vector和array的区别一定要弄清楚，**vector的底层实现是array**，封装后使用更友好。
-
-
-
-
-
-
 
 
 
@@ -651,10 +702,6 @@ struct pair_hash {
 ```
 
 
-
-
-
-## vector
 
 
 
@@ -1167,9 +1214,13 @@ iota函数对一个范围数据进行赋值，用于产生连续的值。
 
 
 
+
+
+
+
 ## explicit 关键字
 
-C++提供了关键字explicit，可以阻止不应该允许的经过转换[构造函数](https://so.csdn.net/so/search?q=构造函数&spm=1001.2101.3001.7020)进行的隐式转换的发生,声明为explicit的构造函数不能在隐式转换中使用。
+C++提供了关键字explicit，可以阻止不应该允许的经过转换[构造函数](https://so.csdn.net/so/search?q=构造函数&spm=1001.2101.3001.7020)进行的隐式转换的发生，声明为explicit的构造函数不能在隐式转换中使用。
 
 
 
@@ -1186,6 +1237,57 @@ volatile关键字是一种类型修饰符，用它声明的类型变量表示可
 [C++11 volatile 类型-CSDN博客](https://blog.csdn.net/heshaai6843/article/details/81058724)
 
 
+
+## override 关键字
+
+用于指示一个成员函数是在派生类中重写基类中的虚函数。
+
+**编译时检查**：使用`override`可以让编译器检查所重写的函数是否确实在基类中存在。如果基类中没有相应的虚函数，编译器会产生错误。这可以防止因函数签名不匹配或拼写错误而导致的潜在问题。
+
+**代码可读性**：`override`使得代码更易于阅读和理解，表明这个函数的意图是重写基类中的虚函数，有助于维护代码。
+
+**避免潜在错误**：使用`override`可以避免因修改基类而引入的错误。例如，如果基类中虚函数的参数类型或返回类型发生了变化，`override`会确保派生类中的重写函数不会再被视为重写。
+
+
+
+##  constexpr
+
+[常值 - OI Wiki (oi-wiki.org)](https://oi-wiki.org/lang/const/)
+
+const 关键字的作用，与constexpr(常表达式)
+
+
+
+const 是类型限定符，既可以修饰变量， 又可以修饰表达式。用于确保某个变量或对象不能被修改。
+
+const的使用场景有很多，简单总结一下：
+
+```c++
+const int x = 10;  // 尝试修改x的值，编译器会报错，
+// 这里的const表示int类型的变量x在定义后不可以被修改
+// 这里直接声明x, const int x;也是一样的,因为默认初始化为0了
+x = 20; // 错误，
+
+
+const int* p = &x; // 指针p指向的内容即x的值不能修改，但指针p可以改变指向，例如：
+int y = 20;
+p = &y; // 正确
+*p = 20; // 错误
+
+int* const p = &x; // const修饰p, 表示指针p自身是个常量，即不可以改变指向，但可以改变指向的内容
+*p = 20 // 正确
+y = 20; p = &y; // 错误
+
+const int* const p = &x; // p的指向和p指向的内容都不可以改变
+
+void 
+```
+
+
+
+
+
+![image-20241018212355397](Cpp.assets/image-20241018212355397.png)
 
 # 9. C++23
 
